@@ -1,0 +1,23 @@
+{
+  "name": "nail_wroclaw_anna",
+  "version": "1.0.0",
+  "description": "nail_wroclaw_anna site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_css": "node-sass -w src/scss/mean.scss -o src/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xdimax1488/nail_wroclaw_anna.git"
+  },
+  "author": "|",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xdimax1488/nail_wroclaw_anna/issues"
+  },
+  "homepage": "https://github.com/Xdimax1488/nail_wroclaw_anna#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
