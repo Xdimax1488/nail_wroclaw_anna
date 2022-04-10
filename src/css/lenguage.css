@@ -1,0 +1,20 @@
+.lenguage {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: flex-end; }
+
+.lenguage__list {
+  display: flex;
+  align-items: center; }
+
+.lenguage__item {
+  padding-right: 1rem;
+  list-style: none; }
+
+.translate {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s linear; }
+  .translate:hover {
+    transform: translateY(-5px); }

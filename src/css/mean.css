@@ -1,2 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,500;0,600;1,700&family=Lato:ital,wght@0,700;1,300;1,400&display=swap");
 html {
   font-size: 15px; }
+
+body {
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+  font-size: 1rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+.conteiner {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto; }
+
+.header {
+  height: 100vh; }
+
+.header__inner {
+  background-image: url(../image/F2488E76-7349-456E-B1C0-953CD0B40860.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+.lenguage {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: flex-end; }
+
+.lenguage__list {
+  display: flex;
+  align-items: center; }
+
+.lenguage__item {
+  padding-right: 1rem;
+  list-style: none; }
+
+.translate {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s linear; }
+  .translate:hover {
+    transform: translateY(-5px); }
