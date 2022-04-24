@@ -1,5 +1,6 @@
 .header {
   height: 100vh;
+  position: relative;
 }
 .header__inner {
   background-image: url(../image/F2488E76-7349-456E-B1C0-953CD0B40860.jpeg);
@@ -8,4 +9,50 @@
   height: 100%;
   background-size: cover;
   background-position: center center;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.header__tittle {
+  font-size: 4rem;
+  color: $wite;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header__deskription {
+  font-size: 3rem;
+  color: $wite;
+  text-transform: capitalize;
+  font-weight: 400;
+  & .span-m {
+    color: $blue;
+  }
+  & .span-k {
+    color: $base;
+  }
+}
+
+.future__batton {
+  margin-top: 13rem;
+}
+.shop {
+  cursor: pointer;
+  background-color: $base;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  color: $wite;
+  font-size: 1.4rem;
+  transition: 0.4s linear;
+  &:hover {
+    background-color: $wite;
+    color: $black;
+  }
 }
