@@ -70,8 +70,14 @@ h6 {
 
 .shop {
   cursor: pointer;
-  background-color: #d09896;
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
+  border-radius: 4px;
   width: 10rem;
   height: 3rem;
   color: #ffffff;
@@ -124,7 +130,83 @@ h6 {
   padding: 0 50px;
   max-width: 1500px; }
 
+#navbar__logo {
+  color: #3a4ba1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem; }
+
 .navbar__menu {
   display: flex;
   align-items: center;
   list-style: none; }
+
+.navbar__item {
+  height: 80px; }
+
+.navbar__links {
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 125px;
+  height: 100%; }
+  .navbar__links:hover {
+    color: #3a4ba1;
+    transition: all 0.3s ease; }
+
+@media screen and (max-width: 960px) {
+  .navbar__conteiner {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1500px; }
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    z-index: -1;
+    transition: all 0.5s ease; }
+    .navbar__menu.active {
+      background: #c39695;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 60vh;
+      font-size: 16rem; }
+  #navbar__logo {
+    padding-left: 50px; }
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white; }
+  .navbar__item {
+    width: 100%; }
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table; }
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%); }
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer; } }
