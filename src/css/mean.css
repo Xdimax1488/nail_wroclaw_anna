@@ -61,7 +61,13 @@ h6 {
   text-transform: capitalize;
   font-weight: 400; }
   .header__deskription .span-m {
-    color: #6e91b6; }
+    background-color: #da22ff;
+    background-image: linear-gradient(to right, #9114ff 0%, #da22ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; }
   .header__deskription .span-k {
     color: #d09896; }
 
@@ -70,22 +76,37 @@ h6 {
 
 .shop {
   cursor: pointer;
-  background: #FC5C7D;
+  background: #fc5c7d;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
   border-radius: 4px;
-  width: 10rem;
-  height: 3rem;
-  color: #ffffff;
-  font-size: 1.4rem;
-  transition: 0.4s linear; }
+  padding: 15px 50px;
+  position: relative;
+  font-size: 1.6rem;
+  transition: all 0.4s; }
+  .shop a {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-decoration: none; }
+  .shop::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fc5c7d;
+    transition: all 0.35s;
+    border-radius: 4px; }
   .shop:hover {
-    background-color: #ffffff;
-    color: #000000; }
+    color: #ffffff; }
+  .shop:hover::after {
+    width: 100%; }
 
 .lenguage {
   padding-top: 3rem;
@@ -139,6 +160,7 @@ h6 {
   font-size: 2rem; }
 
 .navbar__menu {
+  padding-left: 0;
   display: flex;
   align-items: center;
   list-style: none; }
@@ -185,8 +207,8 @@ h6 {
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 99;
-      height: 60vh;
-      font-size: 16rem; }
+      height: 80vh;
+      font-size: 1rem; }
   #navbar__logo {
     padding-left: 50px; }
   .navbar__toggle .bar {
@@ -202,6 +224,11 @@ h6 {
     padding: 2rem;
     width: 100%;
     display: table; }
+  .navbar__btn {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   #mobile-menu {
     position: absolute;
     top: 20%;
@@ -209,4 +236,10 @@ h6 {
     transform: translate(5%, 20%); }
   .navbar__toggle .bar {
     display: block;
-    cursor: pointer; } }
+    cursor: pointer; }
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0; }
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); } }

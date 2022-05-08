@@ -32,7 +32,13 @@
   text-transform: capitalize;
   font-weight: 400;
   & .span-m {
-    color: $blue;
+    background-color: #da22ff;
+    background-image: linear-gradient(to right, #9114ff 0%, #da22ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
   & .span-k {
     color: $base;
@@ -44,20 +50,42 @@
 }
 .shop {
   cursor: pointer;
-  background: #FC5C7D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fc5c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6a82fb,
+    #fc5c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   border: none;
   border-radius: 4px;
-  width: 10rem;
-  height: 3rem;
+  padding: 15px 50px;
+  position: relative;
 
-  color: $wite;
-  font-size: 1.4rem;
-  transition: 0.4s linear;
+  font-size: 1.6rem;
+  transition: all 0.4s;
+  & a {
+    position: relative;
+    z-index: 2;
+    color: $wite;
+    text-decoration: none;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fc5c7d;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
   &:hover {
-    background-color: $wite;
-    color: $black;
+    color: $wite;
+  }
+  &:hover::after {
+    width: 100%;
   }
 }
