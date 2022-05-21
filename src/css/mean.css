@@ -273,7 +273,7 @@ h6 {
   position: relative;
   font-weight: 500; }
   .aboutus__header::after {
-    content: "";
+    content: '';
     width: 5rem;
     height: 2px;
     background-color: #980404;

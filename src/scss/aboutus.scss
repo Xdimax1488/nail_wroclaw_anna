@@ -14,25 +14,24 @@
   font-size: 3rem;
   position: relative;
   font-weight: 500;
-  &::after{
-      content:"";
-      width: 5rem;
-      height: 2px;
-      background-color:rgb(152, 4, 4);
-      position:absolute;
-      bottom: -5px;
-      left: 48%;
+  &::after {
+    content: '';
+    width: 5rem;
+    height: 2px;
+    background-color: rgb(152, 4, 4);
+    position: absolute;
+    bottom: -5px;
+    left: 48%;
   }
 }
 .aboutus__content {
   display: flex;
   margin: 7rem;
-
 }
-.aboutus__description{
-    width: 50%;
+.aboutus__description {
+  width: 50%;
 }
-.aboutus__pic{
-    width: 50%;
-    padding-left: 3.2rem;
+.aboutus__pic {
+  width: 50%;
+  padding-left: 3.2rem;
 }
