@@ -40,8 +40,23 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+  & .span-p {
+    background-color: #da22ff;
+    background-image: linear-gradient(to right, #da22ff 0%, #4c47ecda 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
   & .span-k {
-    color: $base;
+    background-color: #da22ff;
+    background-image: linear-gradient(to right, #4c47ecda 1%, #22d6ff 99%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 }
 

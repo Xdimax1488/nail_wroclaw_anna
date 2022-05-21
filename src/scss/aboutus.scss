@@ -1,0 +1,38 @@
+.aboutus {
+  //background-color: #be2a91b3;
+
+  height: 100vh;
+}
+.aboutus__inner {
+  padding-top: 100px;
+  background-color: #be2a91b3;
+  height: 100%;
+  background-attachment: fixed;
+}
+.aboutus__header {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  font-weight: 500;
+  &::after{
+      content:"";
+      width: 5rem;
+      height: 2px;
+      background-color:rgb(152, 4, 4);
+      position:absolute;
+      bottom: -5px;
+      left: 48%;
+  }
+}
+.aboutus__content {
+  display: flex;
+  margin: 7rem;
+
+}
+.aboutus__description{
+    width: 50%;
+}
+.aboutus__pic{
+    width: 50%;
+    padding-left: 3.2rem;
+}
