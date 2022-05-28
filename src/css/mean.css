@@ -260,23 +260,25 @@ h6 {
 
 .aboutus__inner {
   padding-top: 100px;
-  background-color: #be2a91b3;
+  background-color: #a0418584;
   height: 100%;
   background-attachment: fixed; }
 
-.aboutus__header {
+.block__header {
   text-align: center;
   font-size: 3rem;
   position: relative;
-  font-weight: 500; }
-  .aboutus__header::after {
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.2rem; }
+  .block__header::after {
     content: '';
     width: 5rem;
     height: 4px;
     border-bottom: 1px solid #980404;
     border-top: 1px solid #980404;
     position: absolute;
-    bottom: -5px;
+    bottom: -25px;
     left: 47%; }
 
 .aboutus__content {
@@ -284,12 +286,12 @@ h6 {
   display: flex; }
 
 .aboutus__description {
-  width: 50%;
+  width: 40%;
   padding-right: 6rem;
   display: block; }
 
 .aboutus__pic {
-  width: 50%;
+  width: 60%;
   padding-left: 3.2rem; }
   .aboutus__pic img {
     object-fit: cover;
@@ -316,3 +318,59 @@ h6 {
 .r {
   border-radius: 40px;
   overflow: hidden; }
+
+.services {
+  height: 100%;
+  position: relative; }
+
+.services__inner {
+  background-image: url(../image/back_services.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.services__content {
+  display: flex;
+  margin: 7rem 0;
+  flex-wrap: wrap; }
+
+.content__servic {
+  width: 33.3333%;
+  padding: 1rem; }
+
+.content__pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.2s linear; }
+  .content__pic:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25); }
+
+.content__description {
+  margin-top: 100px; }
+  .content__description.m {
+    margin-top: 0;
+    margin-bottom: 150px; }
+  .content__description.k {
+    margin-top: 20px; }
+  .content__description h3 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #2A2D2F; }
+
+.deskription__text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #767474;
+  font-weight: 500;
+  line-height: 1.6em;
+  padding-top: 20px; }

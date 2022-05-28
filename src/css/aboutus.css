@@ -1,22 +1,24 @@
 .aboutus__inner {
   padding-top: 100px;
-  background-color: #be2a91b3;
+  background-color: #a0418584;
   height: 100%;
   background-attachment: fixed; }
 
-.aboutus__header {
+.block__header {
   text-align: center;
   font-size: 3rem;
   position: relative;
-  font-weight: 500; }
-  .aboutus__header::after {
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1.2rem; }
+  .block__header::after {
     content: '';
     width: 5rem;
     height: 4px;
     border-bottom: 1px solid #980404;
     border-top: 1px solid #980404;
     position: absolute;
-    bottom: -5px;
+    bottom: -25px;
     left: 47%; }
 
 .aboutus__content {
@@ -24,12 +26,12 @@
   display: flex; }
 
 .aboutus__description {
-  width: 50%;
+  width: 40%;
   padding-right: 6rem;
   display: block; }
 
 .aboutus__pic {
-  width: 50%;
+  width: 60%;
   padding-left: 3.2rem; }
   .aboutus__pic img {
     object-fit: cover;
