@@ -30,9 +30,9 @@
 }
 
 .aboutus__content {
- margin: 7rem 0;
+  margin: 7rem 0;
   //padding-left: 1rem;
-  
+
   display: flex;
 }
 .aboutus__description {
@@ -51,7 +51,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 18px;
-    box-shadow: 0px 0px 10px 0px rgba(84,89,95,0.1) ;
+    box-shadow: 0px 0px 10px 0px rgba(84, 89, 95, 0.1);
   }
 }
 .aboutus__description--header {
@@ -64,7 +64,6 @@
   font-size: 1.3rem;
   font-weight: 300;
   display: block;
-  
 }
 .aboutus__description--btn {
   text-align: center;

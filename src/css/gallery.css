@@ -1,0 +1,22 @@
+.gallery__inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #a0418584;
+  height: 100%;
+  background-attachment: fixed; }
+
+.gallery__content {
+  display: flex;
+  margin: 7rem 0;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.content__picture--backrount {
+  position: relative;
+  width: 31.3333%;
+  margin: 0.5rem; }
+
+.content__picture {
+  display: block;
+  max-width: 100%;
+  height: auto; }
