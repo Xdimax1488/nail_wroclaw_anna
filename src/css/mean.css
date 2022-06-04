@@ -3,7 +3,7 @@ html {
   font-size: 15px; }
 
 body {
-  font-family: 'Exo', sans-serif;
+  font-family: 'Exo', Sans-serif;
   margin: 0;
   font-size: 1rem; }
 
@@ -265,9 +265,9 @@ h6 {
 
 .block__header {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.2rem;
   position: relative;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
   line-height: 1.2rem; }
   .block__header::after {
@@ -364,7 +364,7 @@ h6 {
     font-size: 2.1rem;
     font-weight: 600;
     text-transform: capitalize;
-    color: #2A2D2F; }
+    color: #2a2d2f; }
 
 .deskription__text {
   text-align: center;
@@ -433,3 +433,48 @@ h6 {
   padding: 1.2rem;
   background: #b15574;
   transition: all 0.4s linear; }
+
+.price {
+  height: 100%;
+  position: relative; }
+
+.price__inner {
+  background-image: url(../image/back_services.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.price__content {
+  display: flex;
+  margin: 7rem 0; }
+
+.manicure__price {
+  width: 50%;
+  padding-right: 2rem; }
+
+.manicure_pedicure__price {
+  width: 50%;
+  padding-left: 2rem; }
+
+.price__header {
+  color: #fc5c7d;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  font-size: 38px;
+  font-weight: 500; }
+
+.price--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px; }
+
+.expres__price {
+  margin-top: 5rem; }
