@@ -1,0 +1,67 @@
+.smallcontact {
+  display: flex;
+  height: 30px;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.smallcontact__conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  padding: 0 50px;
+  margin: 0 auto;
+  width: 100%;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.info__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__content--icon {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  text-decoration: none;
+  color: $black;
+  margin-right: 30px;
+  & img {
+      margin-right: 10px;
+  }
+  &:hover {
+    color: $pink;
+  }
+}
+.info__content span img {
+  margin-right: 5px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.booksy {
+  padding: 2px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fc5c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  & a {
+    display: flex;
+    font-size: 1rem;
+    color: $wite;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: center;
+    & span {
+      margin-left: 4px;
+      font-weight: 500;
+    }
+  }
+}
