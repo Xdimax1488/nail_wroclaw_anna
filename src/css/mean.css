@@ -575,7 +575,15 @@ h6 {
 
 .content__map {
   max-width: 1200px;
-  height: 500px; }
+  height: 500px;
+  margin-bottom: 100px; }
   .content__map iframe {
     width: 100%;
     height: 500px; }
+
+.footer svg {
+  width: calc(100% + 1.3px);
+  height: 40px; }
+
+.elementor-shape-fill {
+  fill: pink; }
