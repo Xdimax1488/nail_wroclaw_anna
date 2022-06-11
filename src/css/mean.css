@@ -189,7 +189,8 @@ h6 {
   justify-content: center;
   text-decoration: none;
   width: 125px;
-  height: 100%; }
+  height: 100%;
+  transition: all 0.3s ease; }
   .navbar__links:hover {
     color: #3a4ba1;
     transition: all 0.3s ease; }
@@ -531,7 +532,8 @@ h6 {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6a82fb, #fc5c7d); }
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  transition: all 0.3s ease; }
   .booksy a {
     display: flex;
     font-size: 1rem;
@@ -542,3 +544,38 @@ h6 {
     .booksy a span {
       margin-left: 4px;
       font-weight: 500; }
+  .booksy:hover {
+    transform: scale(1.1); }
+
+.contact__inner {
+  padding-top: 100px;
+  background-color: #a0418584;
+  height: 100%;
+  background-attachment: fixed; }
+
+.contact__content {
+  margin-top: 3rem;
+  background-color: #ffffff;
+  padding: 1rem; }
+
+.content__header,
+.content__text {
+  display: block;
+  line-height: 2;
+  font-size: 1.3rem; }
+
+.content__header {
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  font-weight: 600; }
+
+.content__text {
+  font-weight: normal;
+  color: #767474; }
+
+.content__map {
+  max-width: 1200px;
+  height: 500px; }
+  .content__map iframe {
+    width: 100%;
+    height: 500px; }

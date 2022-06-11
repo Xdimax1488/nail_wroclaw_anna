@@ -1,0 +1,34 @@
+.contact__inner {
+  padding-top: 100px;
+  background-color: #a0418584;
+  height: 100%;
+  background-attachment: fixed;
+}
+.contact__content {
+  margin-top: 3rem;
+  background-color: $wite;
+  padding: 1rem;
+}
+.content__header,
+.content__text {
+  display: block;
+  line-height: 2;
+  font-size: 1.3rem;
+}
+.content__header {
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+.content__text {
+  font-weight: normal;
+  color: #767474;
+}
+.content__map {
+  max-width: 1200px;
+  height: 500px;
+  & iframe {
+    width: 100%;
+    height: 500px;
+  }
+}

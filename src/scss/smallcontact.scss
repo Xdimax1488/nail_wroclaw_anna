@@ -23,15 +23,16 @@
   align-items: center;
   justify-content: center;
 }
+
 .info__content--icon {
-    display: flex;
-    align-items:center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: $black;
   margin-right: 30px;
   & img {
-      margin-right: 10px;
+    margin-right: 10px;
   }
   &:hover {
     color: $pink;
@@ -52,6 +53,7 @@
   background: #fc5c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  transition: all 0.3s ease;
   & a {
     display: flex;
     font-size: 1rem;
@@ -63,5 +65,8 @@
       margin-left: 4px;
       font-weight: 500;
     }
+  }
+  &:hover {
+    transform: scale(1.1);
   }
 }
