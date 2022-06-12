@@ -42,3 +42,19 @@
 
 .expres__price {
   margin-top: 5rem; }
+
+@media screen and (max-width: 1000px) {
+  .price__header {
+    font-size: 30px; } }
+
+@media screen and (max-width: 900px) {
+  .price__content {
+    flex-direction: column; }
+  .manicure__price, .manicure_pedicure__price {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media screen and (max-width: 700px) {
+  .price--content {
+    font-size: 1.2rem; } }

@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 125px;
+  margin-left: 30px;
   height: 100%;
   transition: all 0.3s ease;
 
@@ -54,6 +54,9 @@
     color: #3a4ba1;
     transition: all 0.3s ease;
   }
+}
+.navbar__btn{
+  margin-left: 30px;
 }
 @media screen and (max-width: 960px) {
   .navbar__conteiner {
@@ -111,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   #mobile-menu {
@@ -133,3 +137,4 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+

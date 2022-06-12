@@ -60,3 +60,35 @@
   line-height: 1.6em;
   padding-top: 20px;
 }
+@media screen and (max-width: 1000px) {
+  .content__description {
+    & h3 {
+      font-size: 24px;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .services__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content__servic {
+    width: 100%;
+  }
+  .content__pic {
+    width: 100%;
+  }
+  .pedik {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content__description {
+    margin-top: 25px;
+  }
+  .content__description {
+    &.m {
+      margin-top: 25px;
+      margin-bottom: 0;
+    }
+  }
+}

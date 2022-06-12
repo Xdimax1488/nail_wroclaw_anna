@@ -36,7 +36,8 @@ h6 {
   background-repeat: no-repeat;
   height: 100%;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 .header__content {
   display: flex;
@@ -121,6 +122,14 @@ h6 {
   .shop:hover::after {
     width: 100%; }
 
+@media screen and (max-width: 650px) {
+  .header__tittle {
+    font-size: 2.5rem; }
+  .header__deskription {
+    font-size: 1.5rem; }
+  .shop {
+    font-size: 1rem; } }
+
 .lenguage {
   padding-top: 3rem;
   margin-right: 2rem;
@@ -188,12 +197,15 @@ h6 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 125px;
+  margin-left: 30px;
   height: 100%;
   transition: all 0.3s ease; }
   .navbar__links:hover {
     color: #3a4ba1;
     transition: all 0.3s ease; }
+
+.navbar__btn {
+  margin-left: 30px; }
 
 @media screen and (max-width: 960px) {
   .navbar__conteiner {
@@ -262,7 +274,8 @@ h6 {
   padding-top: 100px;
   background-color: #a0418584;
   height: 100%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 100px; }
 
 .block__header {
   text-align: center;
@@ -282,7 +295,7 @@ h6 {
     left: 47%; }
 
 .aboutus__content {
-  margin: 7rem 0;
+  margin-top: 7rem;
   display: flex; }
 
 .aboutus__description {
@@ -318,6 +331,37 @@ h6 {
 .r {
   border-radius: 40px;
   overflow: hidden; }
+
+@media screen and (max-width: 1125px) {
+  .aboutus__content {
+    flex-direction: column-reverse;
+    gap: 40px; }
+  .aboutus__description,
+  .aboutus__pic {
+    width: 100%; }
+  .aboutus__description {
+    padding: 3.2rem; }
+  .aboutus__description--header {
+    font-size: 30px; }
+  .aboutus__pic {
+    padding: 3.2rem; }
+    .aboutus__pic img {
+      width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  .block__header {
+    font-size: 34px;
+    font-weight: 500; } }
+
+@media screen and (max-width: 700px) {
+  .block__header {
+    font-size: 30px; }
+    .block__header::after {
+      left: 45%; } }
+
+@media screen and (max-width: 600px) {
+  .aboutus__description, .aboutus__pic {
+    padding: 1.2rem; } }
 
 .services {
   height: 100%;
@@ -374,6 +418,27 @@ h6 {
   font-weight: 500;
   line-height: 1.6em;
   padding-top: 20px; }
+
+@media screen and (max-width: 1000px) {
+  .content__description h3 {
+    font-size: 24px; } }
+
+@media screen and (max-width: 750px) {
+  .services__content {
+    flex-direction: column;
+    gap: 20px; }
+  .content__servic {
+    width: 100%; }
+  .content__pic {
+    width: 100%; }
+  .pedik {
+    display: flex;
+    flex-direction: column-reverse; }
+  .content__description {
+    margin-top: 25px; }
+  .content__description.m {
+    margin-top: 25px;
+    margin-bottom: 0; } }
 
 .gallery__inner {
   padding-top: 100px;
@@ -480,12 +545,40 @@ h6 {
 .expres__price {
   margin-top: 5rem; }
 
+@media screen and (max-width: 1000px) {
+  .price__header {
+    font-size: 30px; } }
+
+@media screen and (max-width: 900px) {
+  .price__content {
+    flex-direction: column; }
+  .manicure__price, .manicure_pedicure__price {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media screen and (max-width: 700px) {
+  .price--content {
+    font-size: 1.2rem; } }
+
 .smallcontact {
   display: flex;
   height: 30px;
   margin: 1rem;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+
+.smallcontact__wave {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  direction: ltr; }
+  .smallcontact__wave svg {
+    width: calc(100% + 1.3px);
+    height: 22px; }
 
 .smallcontact__conteiner {
   display: flex;
@@ -524,6 +617,10 @@ h6 {
   display: flex;
   align-items: center; }
 
+.instagram__img :hover {
+  transition: all 0.3s ease;
+  transform: scale(1.2); }
+
 .booksy {
   padding: 2px 18px;
   border-radius: 4px;
@@ -547,11 +644,35 @@ h6 {
   .booksy:hover {
     transform: scale(1.1); }
 
+@media screen and (max-width: 1100px) {
+  .info__content--icon {
+    font-size: 12px; }
+  .booksy a {
+    font-size: 12px; }
+  .info__content--icon {
+    margin-right: 15px; } }
+
+@media screen and (max-width: 900px) {
+  .smallcontact__conteiner {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-top: 10px; }
+  .smallcontact {
+    height: auto; } }
+
+@media screen and (max-width: 700px) {
+  .social {
+    display: none; }
+  .info {
+    flex-direction: column;
+    gap: 10px; } }
+
 .contact__inner {
   padding-top: 100px;
   background-color: #a0418584;
   height: 100%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 100px; }
 
 .contact__content {
   margin-top: 3rem;
@@ -575,15 +696,93 @@ h6 {
 
 .content__map {
   max-width: 1200px;
-  height: 500px;
-  margin-bottom: 100px; }
+  height: 500px; }
   .content__map iframe {
     width: 100%;
     height: 500px; }
 
-.footer svg {
-  width: calc(100% + 1.3px);
-  height: 40px; }
+.footer {
+  background-color: #ffffff;
+  padding: 8px 20px 25px 20px;
+  position: relative; }
+
+.footer__wave {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  direction: ltr; }
+  .footer__wave svg {
+    width: calc(100% + 1.3px);
+    height: 40px; }
 
 .elementor-shape-fill {
-  fill: pink; }
+  fill: #a0418584; }
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #9b9b9b;
+  margin-bottom: 30px; }
+
+.footer__navbar--menu {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.footer__navbar--item {
+  margin-left: 10px; }
+
+.footer__navbar--links {
+  padding: 0 15px 0 15px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #6d6c6c;
+  cursor: pointer;
+  translate: all 0.3s ease; }
+  .footer__navbar--links:hover {
+    color: #000000; }
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer__social--icon {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease; }
+  .footer__social--icon img:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.2); }
+
+.copiright {
+  font-size: 13px;
+  font-weight: 300;
+  color: #54595f; }
+
+.last {
+  margin-right: 0; }
+
+.first {
+  margin-left: 0;
+  padding-left: 0; }
+
+@media screen and (max-width: 1025px) {
+  .footer__nav {
+    justify-content: center;
+    padding-top: 45px; }
+  .footer__navbar--menu {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .footer__social {
+    flex-direction: column;
+    gap: 25px; } }

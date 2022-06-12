@@ -5,9 +5,10 @@
 }
 .aboutus__inner {
   padding-top: 100px;
-  background-color: #a0418584;
+  background-color: $backround;
   height: 100%;
   background-attachment: fixed;
+  padding-bottom: 100px;
 }
 .block__header {
   text-align: center;
@@ -30,7 +31,7 @@
 }
 
 .aboutus__content {
-  margin: 7rem 0;
+  margin-top: 7rem;
   //padding-left: 1rem;
 
   display: flex;
@@ -71,4 +72,46 @@
 .r {
   border-radius: 40px;
   overflow: hidden;
+}
+@media screen and (max-width: 1125px) {
+  .aboutus__content {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .aboutus__description,
+  .aboutus__pic {
+    width: 100%;
+  }
+  .aboutus__description {
+    padding: 3.2rem;
+  }
+  .aboutus__description--header {
+    font-size: 30px;
+  }
+  .aboutus__pic {
+    padding: 3.2rem;
+    & img{
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .block__header {
+    font-size: 34px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 700px) {
+  .block__header {
+    font-size: 30px;
+  
+  &::after {
+    left: 45%;
+  }
+}
+}
+@media screen and (max-width: 600px) {
+  .aboutus__description,.aboutus__pic {
+    padding: 1.2rem;
+  }
 }
