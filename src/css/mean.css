@@ -249,12 +249,14 @@ h6 {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table; }
+    display: table;
+    margin-left: 0; }
   .navbar__btn {
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-left: 0; }
   #mobile-menu {
     position: absolute;
     top: 20%;
@@ -450,55 +452,38 @@ h6 {
 .gallery__content {
   display: flex;
   margin: 7rem 0;
+  flex-direction: row;
   flex-wrap: wrap;
   text-align: center; }
 
 .content__picture--backrount {
-  position: relative;
   width: 32%;
-  margin: 0.5rem;
-  display: block;
-  max-width: 100%;
-  height: 400px;
-  border-radius: 20px; }
+  margin: 0.5rem; }
 
 .content__picture {
   border-radius: 20px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+  .content__picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: all 0.3s ease; }
+    .content__picture img:hover {
+      transform: scale(1); }
 
-.gallerybtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background: rgba(0, 0, 0, 0.347);
-  opacity: 0;
-  border-radius: 20px;
-  transition: all 0.4s linear; }
-  .gallerybtn:hover {
-    opacity: 1;
-    overflow: hidden; }
-  .gallerybtn:hover .lookmore {
-    transform: translateY(-50px); }
+@media screen and (max-width: 1160px) {
+  .content__picture--backrount {
+    width: 48%; } }
 
-.lookmore {
-  position: absolute;
-  top: 215px;
-  left: 30px;
-  border-radius: 50%;
-  padding: 1.2rem;
-  background: #b15574;
-  transition: all 0.4s linear; }
+@media screen and (max-width: 780px) {
+  .content__picture--backrount {
+    width: 47%; } }
+
+@media screen and (max-width: 670px) {
+  .content__picture--backrount {
+    width: 100%; } }
 
 .price {
   height: 100%;
