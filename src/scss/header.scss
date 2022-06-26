@@ -78,7 +78,7 @@
   border-radius: 4px;
   padding: 15px 50px;
   position: relative;
-
+  text-transform: capitalize;
   font-size: 1.6rem;
   transition: all 0.4s;
   & a {
@@ -105,15 +105,29 @@
     width: 100%;
   }
 }
+.no-active--batton {
+  display: none;
+}
+.comming-soon {
+  background-color: #da22ff;
+  background-image: linear-gradient(to right, #190ca8 0%, #ff2277 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-top: 13rem;
+  text-transform: capitalize;
+}
+
 @media screen and(max-width:650px) {
-  .header__tittle{
+  .header__tittle {
     font-size: 2.5rem;
   }
-  .header__deskription{
+  .header__deskription {
     font-size: 1.5rem;
   }
-  .shop{
+  .shop {
     font-size: 1rem;
   }
-  
 }

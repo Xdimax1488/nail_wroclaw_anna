@@ -1,6 +1,15 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
+const button = document.querySelector('.future__batton');
+const commingSoon = document.querySelector('.comming-soon');
+
+// shop button
+const shopButton = () => {
+  button.classList.add('no-active--batton');
+  commingSoon.classList.remove('no-active--batton');
+};
+button.addEventListener('click', shopButton);
 
 // display mobile menu
 const mobileMenu = () => {
