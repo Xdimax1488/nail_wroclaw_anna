@@ -57,10 +57,13 @@
 .social {
   display: flex;
   align-items: center;
-}
-.instagram__img :hover {
   transition: all 0.3s ease;
-  transform: scale(1.2);
+  
+}
+.social :hover {
+  transition: all 0.3s ease;
+
+  transform: scale(1.1);
 }
 
 .booksy {
