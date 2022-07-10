@@ -3,7 +3,11 @@ const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 const button = document.querySelector('.future__batton');
 const commingSoon = document.querySelector('.comming-soon');
-
+const button_aboytus = document.querySelector('#aboutuss_batton');
+const modal = document.querySelector('.modal');
+const body = document.querySelector('body');
+const button_close = document.querySelector('.modal__close');
+const modal__dialog = document.querySelector('.modal__dialog');
 // shop button
 const shopButton = () => {
   button.classList.add('no-active--batton');
@@ -43,29 +47,25 @@ const highlightMenu = () => {
     servicesMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
     galleryMenu.classList.remove('highlight');
-    //headerMenu.classList.remove('highlight');
+
     return;
   } else if (window.innerWidth > 960 && scrollPos < 4600) {
     galleryMenu.classList.add('highlight');
     servicesMenu.classList.remove('highlight');
     priceMenu.classList.remove('highlight');
-    //headerMenu.classList.remove('highlight');
-    //aboutMenu.classList.remove('highlight');
+
     return;
   } else if (window.innerWidth > 960 && scrollPos < 6000) {
     priceMenu.classList.add('highlight');
     galleryMenu.classList.remove('highlight');
-    //servicesMenu.classList.remove('highlight');
+
     contactMenu.classList.remove('highlight');
-    //headerMenu.classList.remove('highlight');
-    //aboutMenu.classList.remove('highlight');
+
     return;
   } else if (window.innerWidth > 960 && scrollPos < 8000) {
     contactMenu.classList.add('highlight');
     priceMenu.classList.remove('highlight');
-    //servicesMenu.classList.remove('highlight');
-    //headerMenu.classList.remove('highlight');
-    //aboutMenu.classList.remove('highlight');
+
     return;
   }
   if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
@@ -75,3 +75,21 @@ const highlightMenu = () => {
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
+
+//modall window
+const modalButton = () => {
+  modal.classList.add('show');
+  body.classList.add('no-scroll');
+};
+button_aboytus.addEventListener('click', modalButton);
+
+const closeButton = () => {
+  modal.classList.remove('show');
+  body.classList.remove('no-scroll');
+};
+modal.addEventListener('click', closeButton);
+button_close.addEventListener('click', closeButton);
+
+modal__dialog.addEventListener('click', function (event) {
+  event.stopPropagation();
+});
