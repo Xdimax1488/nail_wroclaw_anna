@@ -2,3 +2,40 @@
   margin: 1rem;
   margin-top: 5rem;
 }
+.modal-about__header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: center;
+  //border-bottom: 2px red solid;
+}
+.modal-about__inner {
+  display: flex;
+  border-top: 2px $black solid;
+  border-bottom: 2px $black solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  //align-items: center;
+}
+.inner__description{
+  width: 40%;
+}
+.modal-about__img{
+  width: 60%;
+  & img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.modal-about__text{
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: justify;
+  padding-right: 1rem;
+  //border-top: 2px $black solid;
+
+}

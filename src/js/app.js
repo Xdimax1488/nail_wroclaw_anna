@@ -93,3 +93,18 @@ button_close.addEventListener('click', closeButton);
 modal__dialog.addEventListener('click', function (event) {
   event.stopPropagation();
 });
+//swipe slider
+
+var swiper = new Swiper('.modal-about__img', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
