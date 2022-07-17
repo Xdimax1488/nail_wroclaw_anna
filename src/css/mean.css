@@ -210,6 +210,8 @@ h6 {
 
 .navbar__links {
   text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -339,7 +341,7 @@ h6 {
 
 .aboutus__description--header {
   font-size: 2.5rem;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .aboutus__description--text {
   text-align: justify;
@@ -834,6 +836,7 @@ h6 {
   margin-top: 5rem; }
 
 .modal-about__header {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -855,12 +858,29 @@ h6 {
   width: 60%; }
   .modal-about__img img {
     display: block;
-    max-width: 100%;
-    height: auto; }
+    max-width: 100%; }
 
 .modal-about__text {
   font-size: 18px;
   line-height: normal;
   font-weight: 400;
   text-align: justify;
-  padding-right: 1rem; }
+  padding-right: 2rem;
+  padding-left: 1rem; }
+
+@media screen and (max-width: 1200px) {
+  .inner__description {
+    width: 50%; }
+  .modal-about__img {
+    width: 50%; } }
+
+@media screen and (max-width: 1200px) {
+  .modal-about__inner {
+    flex-direction: column-reverse;
+    gap: 1rem; }
+  .inner__description {
+    width: 100%; }
+  .modal-about__img {
+    width: 100%; }
+  .modal-about__text {
+    padding-right: 1rem; } }

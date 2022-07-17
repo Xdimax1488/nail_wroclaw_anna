@@ -60,7 +60,7 @@
           <div class="booksy">
             <a target="_blank" href="https://booksy.com/pl-pl/81452_bnb-studio-nail_paznokcie_13750_wroclaw" class="booksy__content">
               <img src="../image/booksy.png" alt="" width="30px" height="35px">
-              <span>записатся</span>
+              <span class="lang" key="order" >записатся</span>
             </a>
           </div>
         </div>
@@ -77,31 +77,31 @@
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <a href="#header" class="navbar__links" id="home-page">Главная</a>
+          <a href="#header" class="navbar__links lang" key="mean" id="home-page">Главная</a>
         </li>
         <li class="navbar__item">
-          <a href="#about" class="navbar__links" id="works-page">О нас</a>
+          <a href="#about" class="navbar__links lang lang" key="about" id="works-page">О нас</a>
         </li>
         <li class="navbar__item">
-          <a href="#services" class="navbar__links" id="price-page">услуги</a>
+          <a href="#services" class="navbar__links lang" key="services" id="price-page">услуги</a>
         </li>
          </li>
         <li class="navbar__item">
-          <a href="#gallery" class="navbar__links" id="services-page">галерея</a>
+          <a href="#gallery" class="navbar__links lang" key="gallery" id="services-page">галерея</a>
         </li>
         </li>
         <li class="navbar__item">
-          <a href="#price" class="navbar__links" id="kontakt-page">цена</a>
+          <a href="#price" class="navbar__links lang" key="price" id="kontakt-page">цена</a>
         </li>
          </li>
         <li class="navbar__item">
-          <a href="#contact" class="navbar__links" id="kontakt-page2">контакт</a>
+          <a href="#contact" class="navbar__links lang" key="contact" id="kontakt-page2">контакт</a>
         </li>
         <li class="navbar__btn">
-          <button class="translate">
+          <button class="translate" id="ua">
             <img src="../image/ru.jpg" alt="rus" width="30px" height="20px" />
           </button>
-          <button class="translate">
+          <button class="translate" id="pl">
             <img src="../image/flag-800.png" alt="pl" width="30px" height="20px" />
           </button>
         </li>
@@ -135,20 +135,21 @@
   <div class="aboutus" id="about">
     
     <div class="aboutus__inner">
-      <div class="conteiner">
-        <div class="block__header">О нас</div>
+      <div class="conteiner"> 
+        <div class="block__header" ><span class="lang" key="about">О нас</span></div>
         <div class="aboutus__content">
          <div class="aboutus__description wow flipInY">
-           <div class="aboutus__description--header">Почему мы?</div>
-           <div class="aboutus__description--text">
+           <div class="aboutus__description--header lang" key="why_as">Почему мы?</div>
+           <div class="aboutus__description--text lang" key="why_as_description">
             Наши профессиональные мастера маникюра сделают все возможное, чтобы успокоить и успокоить ваше тело и разум! Выбирайте любой цвет вашего nail lux — и мы заставим его работать на вас! 
 
             При каждом маникюре мы наносим на руки, ноги и кутикулу только наше органическое масло для тела и масло для кутикулы ручной работы без косточек. В дополнение к гелевым и акриловым услугам мы также предлагаем порошковые краски, органические процедуры и 5 бесплатных лаков для ногтей для экологически сознательных клиентов.
+            
           
           </div>
            <div class="aboutus__description--btn">
              <button class="shop r" id="aboutuss_batton">
-               <a href="#">узнать больше</a></button>
+               <a class="lang" key="why_as_button" href="#">узнать больше</a></button>
            </div>
 
          </div>
@@ -625,6 +626,7 @@
   <!--java-->
   <script src="../js/wow.min.js"></script>
   <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
   <script>
   new WOW().init();
   </script>
