@@ -57,8 +57,10 @@
     transition: all 0.3s ease;
   }
 }
-.navbar__btn{
+.navbar__btn {
   margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 .highlight {
   border-bottom: 4px solid rgb(132, 0, 255);
@@ -121,7 +123,6 @@
     justify-content: center;
     align-items: center;
     margin-left: 0;
-    
   }
 
   #mobile-menu {
@@ -144,4 +145,3 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-

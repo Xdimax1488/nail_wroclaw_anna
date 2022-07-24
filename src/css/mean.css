@@ -225,7 +225,9 @@ h6 {
     transition: all 0.3s ease; }
 
 .navbar__btn {
-  margin-left: 30px; }
+  margin-left: 30px;
+  display: flex;
+  align-items: center; }
 
 .highlight {
   border-bottom: 4px solid #8400ff; }
