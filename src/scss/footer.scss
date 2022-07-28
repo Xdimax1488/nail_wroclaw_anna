@@ -35,6 +35,14 @@
   list-style: none;
   display: flex;
   align-items: center;
+  transform: translate(-550px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+  &._active{
+    transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+  }
 }
 .footer__navbar--item {
   margin-left: 10px;
@@ -61,9 +69,14 @@
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+  opacity: 0;
   & img:hover {
     transition: all 0.3s ease;
     transform: scale(1.2);
+  }
+  &._active{
+    opacity: 1;
+    transition: all 0.3s ease 0.4s;
   }
 }
 .copiright {

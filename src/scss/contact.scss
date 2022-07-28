@@ -9,12 +9,30 @@
   margin-top: 3rem;
   background-color: $wite;
   padding: 1rem;
+  
 }
 .content__header,
 .content__text {
   display: block;
   line-height: 2;
   font-size: 1.3rem;
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  &._active{
+    transform: translate(0px, 0px);
+  opacity: 1;
+  
+  }
+}
+.content__header._active:nth-child(1){
+  transition: all 0.8s ease 0.1s;
+}
+.content__header._active:nth-child(2){
+  transition: all 0.8s ease 0.3s;
+}
+.content__header._active:nth-child(3){
+  transition: all 0.8s ease 0.5s;
 }
 .content__header {
   text-transform: capitalize;

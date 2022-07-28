@@ -8,6 +8,60 @@ const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
 const button_close = document.querySelector('.modal__close');
 const modal__dialog = document.querySelector('.modal__dialog');
+let navbr = document.querySelector('.navbar');
+let navbrH = document.querySelector('.navbar').clientHeight;
+let smallcontact = document.querySelector('.smallcontact').clientHeight;
+const animItems = document.querySelectorAll('._anim-items');
+
+// animItems
+
+if (animItems.length > 0) {
+  window.addEventListener('scroll', animOnscroll);
+  function animOnscroll() {
+    for (let index = 0; index < animItems.length; index++) {
+      const animItem = animItems[index];
+      const animItemHeight = animItem.offsetHeight;
+      const animItemOffset = offset(animItem).top;
+      const animStart = 4;
+
+      let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+      if (animItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - animItemHeight / animStart;
+      }
+      if (
+        pageYOffset > animItemOffset - animItemPoint &&
+        pageYOffset < animItemOffset + animItemHeight
+      ) {
+        animItem.classList.add('_active');
+      } else {
+        animItem.classList.remove('_active');
+      }
+    }
+  }
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+  }
+}
+
+setTimeout(() => {
+  animOnscroll();
+}, 300);
+
+// navbar scroll
+let sumHeight = navbrH + smallcontact;
+document.onscroll = function () {
+  let scroll = window.scrollY;
+  if (scroll > sumHeight) {
+    navbr.classList.add('fixed');
+  } else {
+    navbr.classList.remove('fixed');
+  }
+};
+
 // shop button
 const shopButton = () => {
   button.classList.add('no-active--batton');

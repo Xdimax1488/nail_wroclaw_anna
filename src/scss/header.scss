@@ -26,6 +26,13 @@
   color: $wite;
   text-transform: uppercase;
   font-weight: 700;
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
 .header__deskription {
   font-size: 3rem;
@@ -40,6 +47,13 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+      opacity: 1;
+      transition: all 0.8s ease 0.5s;
+    }
   }
   & .span-p {
     background-color: #da22ff;
@@ -49,6 +63,13 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    transform: translate(0px, 120px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+      opacity: 1;
+      transition: all 0.8s ease 0.9s;
+    }
   }
   & .span-k {
     background-color: #da22ff;
@@ -58,6 +79,12 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active{
+      opacity: 1;
+      transition: all 0.8s ease 1.2s;
+    }
   }
 }
 

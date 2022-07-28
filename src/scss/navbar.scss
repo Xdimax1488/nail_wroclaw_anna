@@ -9,6 +9,11 @@
   top: 0;
   z-index: 999;
 }
+.navbar.fixed {
+  
+  
+  background: $navcolor_opaciti;
+}
 
 .navbar__conteiner {
   display: flex;
