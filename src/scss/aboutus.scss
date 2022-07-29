@@ -17,6 +17,9 @@
   font-weight: 700;
   text-transform: capitalize;
   line-height: 1.2rem;
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
   &::after {
     content: '';
     width: 5rem;
@@ -27,6 +30,11 @@
     position: absolute;
     bottom: -25px;
     left: 47%;
+  }
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s;
   }
 }
 
@@ -46,6 +54,9 @@
   width: 60%;
   //height: 120px;
   padding-left: 3.2rem;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
   & img {
     object-fit: cover;
     display: block;
@@ -54,10 +65,23 @@
     border-radius: 18px;
     box-shadow: 0px 0px 10px 0px rgba(84, 89, 95, 0.1);
   }
+  &._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
+  }
 }
 .aboutus__description--header {
   font-size: 2.5rem;
   font-weight: 500;
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s;
+  }
 }
 .aboutus__description--text {
   text-align: justify;
@@ -65,6 +89,16 @@
   font-size: 1.3rem;
   font-weight: 300;
   display: block;
+  & p {
+    transform: translate(0px, 120px);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s;
+    }
+  }
 }
 .aboutus__description--btn {
   text-align: center;
@@ -90,7 +124,7 @@
   }
   .aboutus__pic {
     padding: 3.2rem;
-    & img{
+    & img {
       width: 100%;
     }
   }
@@ -104,14 +138,15 @@
 @media screen and (max-width: 700px) {
   .block__header {
     font-size: 30px;
-  
-  &::after {
-    left: 45%;
+
+    &::after {
+      left: 45%;
+    }
   }
 }
-}
 @media screen and (max-width: 600px) {
-  .aboutus__description,.aboutus__pic {
+  .aboutus__description,
+  .aboutus__pic {
     padding: 1.2rem;
   }
 }

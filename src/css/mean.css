@@ -335,7 +335,10 @@ h6 {
   position: relative;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 1.2rem; }
+  line-height: 1.2rem;
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0s; }
   .block__header::after {
     content: '';
     width: 5rem;
@@ -345,6 +348,10 @@ h6 {
     position: absolute;
     bottom: -25px;
     left: 47%; }
+  .block__header._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s; }
 
 .aboutus__content {
   margin-top: 7rem;
@@ -357,7 +364,10 @@ h6 {
 
 .aboutus__pic {
   width: 60%;
-  padding-left: 3.2rem; }
+  padding-left: 3.2rem;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s; }
   .aboutus__pic img {
     object-fit: cover;
     display: block;
@@ -365,10 +375,21 @@ h6 {
     height: auto;
     border-radius: 18px;
     box-shadow: 0px 0px 10px 0px rgba(84, 89, 95, 0.1); }
+  .aboutus__pic._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0s; }
 
 .aboutus__description--header {
   font-size: 2.5rem;
-  font-weight: 500; }
+  font-weight: 500;
+  transform: translate(0px, 120px);
+  opacity: 0;
+  transition: all 0.8s ease 0s; }
+  .aboutus__description--header._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.4s; }
 
 .aboutus__description--text {
   text-align: justify;
@@ -376,6 +397,14 @@ h6 {
   font-size: 1.3rem;
   font-weight: 300;
   display: block; }
+  .aboutus__description--text p {
+    transform: translate(0px, 120px);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s; }
+    .aboutus__description--text p._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all 0.8s ease 0.4s; }
 
 .aboutus__description--btn {
   text-align: center; }
@@ -412,7 +441,8 @@ h6 {
       left: 45%; } }
 
 @media screen and (max-width: 600px) {
-  .aboutus__description, .aboutus__pic {
+  .aboutus__description,
+  .aboutus__pic {
     padding: 1.2rem; } }
 
 .services {
@@ -726,7 +756,8 @@ h6 {
 .contact__content {
   margin-top: 3rem;
   background-color: #ffffff;
-  padding: 1rem; }
+  padding: 1rem;
+  overflow: hidden; }
 
 .content__header,
 .content__text {
@@ -799,7 +830,7 @@ h6 {
   list-style: none;
   display: flex;
   align-items: center;
-  transform: translate(-550px, 0px);
+  transform: translate(-600px, 0px);
   opacity: 1;
   transition: all 0.8s ease 0s; }
   .footer__navbar--menu._active {
